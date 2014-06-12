@@ -1,7 +1,17 @@
 Treehouse Android Utilities
 ===========================
 
-This repository holds helpful utility files for Treehouse Android projects. Included are a couple of helper classes that can be used to work with files in Android, like resizing images and converting to byte arrays.
+This repository holds helpful utility files for Treehouse Android projects. Included are a couple of helper classes that can be used to work with files in Android, like detecting a shake, resizing images, and converting to byte arrays.
+
+## Build a Simple Android App
+Download the following file and add it to your project.
+
+- ShakeDetector.java
+
+### ShakeDetector.java
+
+- Create a ShakeDetector object and implement the `onShake()` method from the `OnShakeListener` interface.
+
 
 ## Build a Self-Destructing Message Android App
 Download the following files and add them to your project.
