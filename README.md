@@ -1,25 +1,17 @@
 Treehouse Android Utilities
 ===========================
 
-This repository holds helpful utility files for Treehouse Android projects. Included are a couple of helper classes that can be used to work with files in Android, like detecting a shake, resizing images, and converting to byte arrays.
+This repository holds helpful utility files for Treehouse Android projects. Included are a couple of helper classes that can be used to work with files in Android, like detecting a shake, resizing images, and converting to byte arrays. 
 
-## Build a Simple Android App
-Download the following file and add it to your project.
+Just download the files and add them to your own projects. `FileHelper.java` requires IOUtils from [Apache Commons](https://commons.apache.org/proper/commons-io/index.html), which you can include with Gradle like this:
 
-- ShakeDetector.java
+```
+dependencies {
+    compile 'commons-io:commons-io:2.5'
+}
+```
 
-### ShakeDetector.java
-
-- Create a ShakeDetector object and implement the `onShake()` method from the `OnShakeListener` interface.
-
-
-## Build a Self-Destructing Message Android App
-Download the following files and add them to your project.
-
-*This project also requires the Apache IOUtils library. [Download the required JAR here](http://commons.apache.org/proper/commons-io/download_io.cgi). Choose the latest zip file under "Binaries".
-
-- FileHelper.java
-- ImageResizer.java
+*Alternatively, [download the required JAR here](http://commons.apache.org/proper/commons-io/download_io.cgi). Choose the latest zip file under "Binaries".
  
 ### FileHelper.java
 
@@ -34,3 +26,6 @@ Download the following files and add them to your project.
 - `getDimensions(byte[] imageData)`: This is a helper method to get the dimensions of an image.
 - `calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight)`: This is a helper method to calculate the appropriate sample size to use for resizing an image.
 
+### ShakeDetector.java
+
+- Create a ShakeDetector object and implement the `onShake()` method from the `OnShakeListener` interface.
